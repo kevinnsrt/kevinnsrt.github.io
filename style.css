@@ -1,0 +1,380 @@
+/*General*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(7, 16, 8);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color:rgb(85, 85,85);
+}
+
+h1 {
+    color: white;
+}
+
+/*Transitition*/
+
+a,
+.btn {
+    transition: all 300ms ease;
+}
+
+/*Desktop Nav*/
+
+nav,
+.nav-link {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-link {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: grey;
+    text-decoration:underline;
+    text-underline-offset: 1rem;
+    text-decoration-color:rgb(181, 181, 181);
+}
+
+.logo {
+    font-size: 2rem;
+    color: white;
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+/*hamburger-menu*/
+
+#hamburger-nav {
+    display: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color:white;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color:black;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color:white;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg)translate(10px,5px);
+}
+
+.hamburger-icon.open span:nth-child(2) { 
+    opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px,-5px);
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+.hamburger-icon span:first-child {
+    opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+/*sections*/
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display:  flex;
+}
+
+/*profile section */
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section-pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.profile-picture {
+    border-radius: 2rem;
+}
+
+.section-text {
+    align-self: center;
+    text-align: center;
+}
+
+.section-text p {
+    font-weight: 600;
+
+}
+
+.section-text-p1 {
+    text-align: center;
+}
+
+.section-text-p1 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#social-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/*icon*/
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+/*about*/
+#about {
+    position: relative;
+}
+
+
+.about-description {
+    gap: 1rem;
+    position: relative;
+    font-size:large;
+    color: white;
+}
+
+.text-container {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+
+
+}
+
+.about-picture {
+    position: relative;
+    border-radius: 2rem;
+
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+    width: 5vh;
+    height: 5vh;
+}
+
+.coding-icon {
+    margin-top: 2rem;
+    width: 10vh;
+    height: 10vh;
+}
+
+.section-container {
+    gap: 4rem;
+    height: 80%;
+}
+
+.section-pic-container {
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.school-icon {
+    width: 10vh;
+    height: 10vh;
+    margin-right: 3rem;
+}
+
+.education-text {
+    position: relative;
+}
+
+.article-container {
+    margin-top: 5rem;
+    display:grid;
+    justify-content: center;
+}
+
+.education-details {
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#education {
+    position: relative;
+}
+
+#section {
+    position: relative;
+    margin-top: 10rem;
+}
+
+.text-contact {
+    margin-top: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.skills-container {
+    margin-top: 2rem;
+    display: flex;
+    gap: 3rem;
+}
+
+.skills-description {
+    color: rgb(22, 22, 22);
+    background-color: white;
+    font-size: xx-large;
+    border: solid;
+    border-radius: 0.5rem;
+    
+}
+
+.skills-icon {
+    margin-top: 1.5rem;
+    display: flex;
+}
+
+.title-container {
+    margin-top: 2rem;
+}
+
+.hobby-container {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.gitar-pic {
+    width: 50rem;
+    height:20rem;
+}
+
+.game-pic {
+    width: 50rem;
+    height: 20rem;
+}
+
+.contact-container {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.whatsapp-pic {
+    height: 15rem;
+    width: 15rem;
+}
+
+.gmail-pic {
+    height: 15rem;
+    width: 15rem;
+}
+
+.skills-title {
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+    font-size: xx-large;
+}

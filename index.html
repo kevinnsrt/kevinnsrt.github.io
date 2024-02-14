@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Kevin Sirait</div>
+        <div>
+            <ul class="nav-link">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#hobby">Hobby</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+    
+    <nav id="hamburger-nav">
+        <div class="logo">Kevin Sirait</div>
+            <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                     </div>
+                            <div class="menu-links">
+                                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                                <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+                                <li><a href="#hobby" onclick="toggleMenu()">Hobby</a></li>
+                                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                                
+                            </div>
+            </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section-pic-container">
+            <img class="profile-picture" src="./assets/profile-picture.jpg" alt="Kevin Sirait Profile Picture">
+        </div>
+
+    <div class="section-text">
+        <p class="section-text-p1">Hello, I'm</p>
+        <h1 class="title">Kevin Namalo Sirait</h1>
+        <h1 class="title-2">Information Technology</h1>
+        <p class="section-text-p2">University Of North Sumatera</p>
+        
+        <div id="socials-container">
+            <img src="./assets/linkedin.png" alt="My LinkedIn Profile"
+            class="icon"
+            onclick="location.href = 'https://www.linkedin.com/in/kevin-namalo-sirait-216949282/'">
+    
+            <img src="./assets/instagram.png" alt="My Instagram Profile"
+            class="icon"
+            onclick="location.href = 'https://www.instagram.com/kevinnsrt/'">
+        </div>
+    </div>
+
+    </section>
+
+    <section id="about">
+        <div class="title-container">
+            <h1 class="title">About Me</p>
+        </div>
+        
+        <div class="section-container">
+            <div class="section-pic-container">
+                <img class="about-picture" src="./assets/aboutme.jpg" alt="about-me-picture">
+            </div>
+
+            <div class="text-container">
+                <p class="about-description">
+                    Kevin Sirait graduated from SMAS Kalam Kudus Pematangsiantar with a major in Science. 
+                    <p class="about-description">He is interested in Software Development, Web Development, and Networking, </p>
+                    <p class="about-description"> and is currently pursuing his studies at the University of Sumatera Utara with a major in Information Technology.</p>
+                    <p class="about-description">Kevin has completed various projects and worked with numerous individuals, which has honed his teamwork skills.</p>
+                </p>
+            <div class="skills-icon">
+                <img class="coding-icon" src="./assets/coding.png" alt="coding-icon">
+                <h1 class="skills-title">Skills</h1>
+            </div>
+
+                <div class="skills-container">
+                    <p class="skills-description">
+                        HTML
+                    </p>
+                    <p class="skills-description">
+                        CSS
+                    </p>
+                    <p class="skills-description">
+                        C
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+      <img class="arrow" src="./assets/down-arrow.png" alt="arrow" class="icon-arrow" onclick="location.href = './#education'">
+
+    </section>
+
+<section id="education">
+        <div class="title-container">
+            <h1 class="title">Education</h1>
+        </div>
+
+    <div class="article-container"> 
+        
+            <div class="education-details">
+                <img class="school-icon" src="./assets/school.png" alt="school-icon">
+          
+               <div class="education-box">
+                   <p>
+                   Universitas Sumatera Utara
+                   <P>2023-Now</P>
+                   </p>
+               
+               </div>
+              
+           </div>
+
+           <div class="education-details">
+                <img class="school-icon" src="./assets/school.png" alt="school-icon">
+          
+               <div class="education-box">
+                   <p>
+                   SMA Kristen Kalam Kudus Pematangsiantar
+                   <P>2020-2023</P>
+                   </p>
+               </div>
+           </div>
+
+           <div class="education-details">
+            <img class="school-icon" src="./assets/school.png" alt="school-icon">
+          
+               <div class="education-box">
+                   <p>
+                   SMP Bintang Timur Pematangsiantar
+                   <P>2017-2020</P>
+                   </p>
+               </div>
+           </div>
+
+        
+            <div class="education-details">
+             <img class="school-icon" src="./assets/school.png" alt="school-icon">
+           
+                <div class="education-box">
+                    <p>
+                    SD Kristen Kalam Kudus Pematangsiantar
+                    <P>2011-2017</P>
+                    </p>
+                </div>
+            </div>
+    
+    </div>
+        <img class="arrow" src="./assets/down-arrow.png" alt="arrow" class="icon-arrow" onclick="location.href = './#hobby'">
+
+</section>
+
+<section id="hobby">
+    <h1 class="title">Hobby</h1>
+    <div class="hobby-container">
+        <img class="gitar-pic" src="./assets/gitar.jpg" alt="gitar-pic">
+        <img class="game-pic" src="./assets/game.jpg" alt="game-pic">
+    </div>
+    <img class="arrow" src="./assets/down-arrow.png" alt="arrow" class="icon-arrow" onclick="location.href = './#contact'">
+</section>
+
+<section id="contact">
+<div class="title-container">
+    <h1 class="title">Contact</h1>
+</div>
+<div class="contact-container">
+<div class="wa-container">
+    <img class="whatsapp-pic" src="./assets/whatsapp.png" alt="whatsapp-pic">
+    <p class="text-contact">081264872825 (Kevin)</p>
+</div>
+    <div class="gmail-container">
+        <img class="gmail-pic" src="./assets/gmail.png" alt="gmail-pic">
+        <p class="text-contact">siraitkevin25@gmail.com</p>
+    </div>
+    
+</div>
+
+
+
+</section>
+
+    <script src="script.js"></script>
+</body>
+</html>
